@@ -3,10 +3,10 @@
 
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "small";
+$servername = "den1.mysql4.gear.host";
+$username = "csc540";
+$password = "Ab04e~sXWF!d";
+$dbname = "csc540";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -24,7 +24,9 @@ $loginchecker = $conn->query("Select ID FROM login WHERE username = '$username' 
 if ($loginchecker->num_rows == 0){
     echo "Invalid login information. <br>";
     echo "<a href='customer_login.html'> Back</a>";
-} else {}
+} else {
+    echo "Success!";
+}
 
 $conn->close();
 
