@@ -23,7 +23,7 @@ $loginchecker = $conn->query("Select ID FROM login WHERE username = '$username' 
 //checks if login information is present in customer database
 if ($loginchecker->num_rows == 0){
     echo "Invalid login information. <br>";
-    echo "<a href='540HW1login.html'> Back</a>";
+    echo "<a href='customer_login.html'> Back</a>";
 } else {}
 
 $conn->close();
