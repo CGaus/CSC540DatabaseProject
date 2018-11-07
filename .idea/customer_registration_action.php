@@ -22,7 +22,7 @@ $registerStreetAddress = $_POST['address'];
 $registerCity = $_POST['city'];
 $registerState = $_POST['state'];
 $registerZip = $_POST['zipcode'];
-$registerpword = $_POST['password'];
+$registerPword = $_POST['password'];
 $registerCpword= $_POST['Cpassword'];
 $namevalid = FALSE;
 $passwordvalid = FALSE;
@@ -37,7 +37,7 @@ if ($registerUsername != "" and $namechecker->num_rows == 0) {
 }
 
 // Check if password and confirmation match each other
-if ($registerpword != "" and $registerpword == $registerCpword) {
+if ($registerPword != "" and $registerPword == $registerCpword) {
     $passwordvalid = TRUE;
 } else {
     echo "Password does not match<br>";
@@ -46,7 +46,7 @@ if ($registerpword != "" and $registerpword == $registerCpword) {
 
 //If username and password are valid the values will be sent to the login table
 if ($namevalid == TRUE and $passwordvalid == TRUE) {
-    $conn->query("INSERT INTO login (username, password) VALUES ('$registerUsername', '$registerpword')");
+    $conn->query("INSERT INTO login (username, password) VALUES ('$registerUsername', '$registerPword')");
     echo "New record created successfully.<br>
 			<a href='customer_login.html'>Return to login page</a>";
 } else {
