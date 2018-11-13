@@ -1,5 +1,5 @@
 <?php
-require "database.php";
+require "../../project_files/database.php";
 ?>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -19,7 +19,7 @@ require "database.php";
 
 <div class="row" id="logo_id">
     <div class="col-md-12 text-center">
-        <img src = "../../images/customer_portal.png">
+        <img src = "../images/customer_portal.png">
 
 
 

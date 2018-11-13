@@ -1,6 +1,6 @@
 <?php
 
-require "database.php";
+require   "../../project_files/database.php";
 
 session_start();
 
@@ -21,7 +21,7 @@ session_start();
     <div class="container">
         <div class="row" id="logo_id">
             <div class="col-md-12 text-center">
-                <img src = "../../images/customer_portal.png">
+                <img src = "../images/customer_portal.png">
 
             </div>
         </div>
@@ -62,7 +62,7 @@ session_start();
         </div>
         <div class="row text-center">
             <div class="col-md-12" id="signUp">
-                Are you an employee? Please login  <a href="employee_portal.php">here.</a>
+                Are you an employee? Please login  <a href="../employee/employee_portal.php">here.</a>
             </div>
         </div>
     </div>

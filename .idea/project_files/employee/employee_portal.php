@@ -1,5 +1,5 @@
 <?php
-require "database.php";
+require "../../project_files/database.php";
 session_start();
 ?>
 
@@ -27,7 +27,7 @@ session_start();
 <div class="container">
     <div class="row" id="logo_id">
         <div class="col-md-12 text-center">
-            <img src = "images/EmployeePortal_Logo.png">
+            <img src = "../images/EmployeePortal_Logo.png">
 
         </div>
     </div>
@@ -63,7 +63,10 @@ session_start();
     </div>
     <div class="row text-center">
         <div class="col-md-12" id="signUp">
-            New Employee? Register yourself  <a href="registration.php">here!</a>
+            New Employee? Register yourself  <a href="employee_registration.php">here!</a>
+        </div>
+        <div class="col-md-12" id="return">
+             Return to customer portal?  Click<a href="../customer/customer_portal.php"> here!</a>
         </div>
     </div>
 </div>

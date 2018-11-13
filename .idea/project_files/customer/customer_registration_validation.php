@@ -1,6 +1,6 @@
 <?php
-require "database.php";
-require "connect/DbHandler.php";
+require "../../project_files/database.php";
+require "../../connect/DbHandler.php";
 
 $newConnection = new DbHandler();
 $conn = $newConnection->getConnection();
