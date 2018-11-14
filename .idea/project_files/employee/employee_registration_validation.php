@@ -20,6 +20,6 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error inserting data" . $conn->error;
 }
-header('Location: login.php');
+header('Location: employee_portal.php');
 $conn->close();
 ?>

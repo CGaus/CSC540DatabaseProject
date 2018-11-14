@@ -11,5 +11,5 @@ echo "</br>";
 echo "Employee Portal Page";
 echo "</br>";
 echo "</br>";
-echo "<a href='logout.php'>Logout</a>";
+echo "<a href='../../project_files/logout.php'>Logout</a>";
 ?>

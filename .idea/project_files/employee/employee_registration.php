@@ -33,7 +33,7 @@ require "../../project_files/database.php";
     </div>
     <div id="login_form_wrapper">
         <div class="row text-center">
-            <form action="regsubmit.php" method="POST">
+            <form action="employee_registration_validation.php" method="POST">
 
                 <div class="row">
                     <div class="col-xs-1">

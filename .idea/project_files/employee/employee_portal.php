@@ -33,7 +33,7 @@ session_start();
     </div>
     <div id="login_form_wrapper">
         <div class="row text-center">
-            <form action="loginvalidation.php" method="POST">
+            <form action="employee_login_validation.php" method="POST">
                 <div class="row" style="margin-top: 50px;">
                     <div class="col-md-12">
                         Username: <input id="employee_username" type="text" name="username">
