@@ -34,7 +34,7 @@ require "../../project_files/database.php";
     </div>
     <div id="login_form_wrapper">
         <div class="row text-center">
-            <form action="customer_registration_validation.php" method="POST">
+            <form id="cust_reg" action="customer_registration_validation.php" method="POST">
 
                 <div class="row">
                     <div class="col-xs-1">
