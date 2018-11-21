@@ -15,7 +15,7 @@ function submit(){
 
     $.ajax({
         type: "POST",
-        url: "loginvalidation.php",
+        url: "employee_login_validation.php",
         data: {
             username: username,
             password: password
