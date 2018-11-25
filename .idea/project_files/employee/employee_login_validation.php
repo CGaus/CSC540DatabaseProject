@@ -2,7 +2,7 @@
 require "../../project_files/database.php";
 session_start();
 if (isset($_SESSION['username'])) {
-    header( 'Location: ../employee_portal/portal.php ' );
+    header( 'Location: employee_home.php ' );
 }
 $user = $_POST["username"];
 $pw = $_POST["password"];

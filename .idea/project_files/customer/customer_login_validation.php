@@ -1,15 +1,20 @@
 <?php
 require "../../project_files/database.php";
+
 session_start();
 if (isset($_SESSION['username'])) {
     header( 'Location: customer_portal.php' );
 }
+
 $user = $_POST["username"];
 $pw = $_POST["password"];
 $savedPw = "";
+
 $conn = getConnection();
 $query = "SELECT * from customer where username = '$user'";
+
 $res = mysqli_query($conn, $query);
+
 if(mysqli_num_rows($res) != 1){
     $data = array(
         "isValid"=> false,

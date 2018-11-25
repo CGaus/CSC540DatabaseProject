@@ -10,6 +10,8 @@ if ($conn->connect_error) {
 }
 
 session_start();
+
+
 $username = $_POST["username"];
 $pw = password_hash($_POST["password"], PASSWORD_DEFAULT);
 $firstname = $_POST["firstname"];
@@ -26,8 +28,9 @@ VALUES ('$username', '$pw', '$firstname', '$lastname', '$address', '$city', '$st
 if ($conn->query($sql) === TRUE) {
     echo "Data inserted successfully";
     echo "<br>";
+    header("Location: customer_portal.php");
 } else {
-    echo "Error inserting data" . $conn->error;
+    echo "Error inserting data" . $sql ."<br>".$conn->error;
 }
 
 header('Location: customer_portal.php');

@@ -17,7 +17,7 @@ $('input').keyup(function(){
 });
 
 $('#login_button').click(function(){
-    $('#cust_reg').submit();
+    submit();
 });
 
 $('input[type="password"]').keyup(function(){

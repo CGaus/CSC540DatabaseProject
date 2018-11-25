@@ -20,12 +20,13 @@ function submit(){
             username: username,
             password: password
         },
-        success: [function(response){
-            response = JSON.parse(response);
+        success: [function(data){
+            response = JSON.parse(data);
+            console.log(response);
             if(response['isValid'] == false){
                 updateFeedback(response['feedback'], 'red');
             }else{
-                window.location = 'customer_portal.php';
+                window.location = 'customer_home.php';
             }
         }],
         error: function(response){

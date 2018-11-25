@@ -8,7 +8,7 @@ if (isset($_SESSION['username'])) {
 echo "</br>";
 echo "</br>";
 echo "</br>";
-echo "Employee Portal Page";
+echo "Employee Home Page";
 echo "</br>";
 echo "</br>";
 echo "<a href='../../project_files/logout.php'>Logout</a>";
